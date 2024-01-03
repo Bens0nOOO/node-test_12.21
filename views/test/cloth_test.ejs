@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <title>Document</title>
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link rel="stylesheet" href="/Css/Product.css" />
+    <!-- icon:https://fontawesome.com/  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      .row {
+        height: 100vh;
+        width: 100vw;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <nav class="sticky-nav">
+        <ul>
+          <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>
+          <li><a href="#about">買家中心<i class="fa-brands fa-shopify"></i></a></li>
+          <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+          <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+        </ul>
+      </nav>
+    </header>
+    <!-- 商品框架 -->
+    <article>
+        <div class="container">
+            <div class="item">
+                <img src=<%= img %> class="Product_Picture">
+                <p class="Product_Description">
+                  <b class="Product_title">
+                    【 GOBLET 】❤️‍🔥純棉 重磅280g 經典 復古 
+                    球衣 寬鬆 運動 短袖 男女 潮流 歐美 ❤️‍🔥
+                    </b>
+                    <%= des %>
+                  <!-- 尺寸：<select>
+                          <option>請選擇尺寸</option>
+                          <option>S  衣長71 胸圍110</option>
+                          <option>M 衣長73 胸圍114</option>
+                          <option>L  衣長76 胸圍118</option>
+                          <option>XL 衣長79 胸圍122</option>
+                          <option>2XL 衣長82 胸圍126</option>
+                       </select> 
+                  數量：<input type="number" placeholder="請輸入購買數量" min="1" step="1">
+                
+                  <button class="Buy">購買</button> -->
+                  </p>
+              </div>
+        </div>
+    </article>
+    <div class="row">
+      <div class="col-md-4 text-left">
+          <ul>
+            <li><h4>關於我們</h4></li>
+            <li><a href="/views/center.ejs">客服中心</a></li>
+            <li><a href="/views/question.ejs">購買須知</a></li>
+            <li><a href="/views/pps.ejs">人物介紹</a></li>
+          </ul>
+      </div>
+      
+      <div class="col-md-4 text-left">
+        <ul>
+        <li><h4>會員中心</h4></li>
+        <li>購物流程</li>
+        <li>訂單查詢</li>
+        <li>退貨及退款</li>
+      </ul>
+      </div>
+      <div class="col-md-4 text-left">
+            <address>
+              <h3>
+                服務專線：02-22222222        
+                <br>服務時間：禮拜一至五
+                <br>12:00~21:00
+              </h3>
+            </address>
+      </div>
+    </div>
+
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+
+
+  </body>
+</html>

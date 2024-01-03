@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+          /* background-image: url("../image/AM_background.jpg"); */
+          /* width: 100%; */
+          /* height: 100%; */
+          position: relative;
+          height: 100%;
+        }
+        .Background {
+          width: 100%;
+          height: 100%;
+          background-repeat: repeat-y;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .con {
+          text-align: start;
+        }
+        .con h1 {
+          position: relative;
+          padding-left:10%;
+          padding-top: 2%;
+        }
+        .con div {
+          border: 1px solid black;
+          padding: auto;
+          margin: 20px;
+          padding-left: 10%;
+        }
+        .con dt {
+          position: relative;
+          padding-left: 13%;
+        }
+        .con dd {
+          position: relative;
+          padding-left: 15%;
+        }
+        .face {
+          border-radius: 50%;
+          max-width: 150px;
+          padding-left: 0%;
+          /* height: auto; */
+        }
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        header {
+          text-align: center;
+          background-color: #f0f0f0;
+          padding: 20px;
+        }
+
+        /* img {
+          border-radius: 50%;
+          max-width: 150px;
+          height: auto;
+        } */
+
+        h1 {
+          margin: 10px 0 5px;
+        }
+
+        p {
+          color: #555;
+        }
+
+        section {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+          list-style: none;
+          /* padding: 0; */
+        }
+
+        /* li {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 5px 10px;
+          border-radius: 5px;
+        } */
+
+        h1 {
+          background-color: #754b79;
+          margin: 0px;
+          padding: 20px;
+          
+          color: white;
+          text-align: center;
+          
+          border-style: solid;
+          border-width: 0 0 1px 0;
+        }
+          
+        /* The page content, not including the header */
+        div.main {
+          margin: 30px 70px 0 60px;
+        }
+        
+        /* The introduction section. */
+        div.intro {
+          margin-bottom: 40px;
+          color: #010000;
+        } 
+             
+    </style>
+</head>
+<body>
+    <img src="/images/back.jpg" alt="WRONG" class="Background">
+    <%- include('../shared/header') %>
+    <!-- <header id="header">
+      
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>         
+            <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+            <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+          </ul>
+        </nav>
+    </header> -->
+    <div>
+        <h1>結帳區</h1>
+
+        <div class="main">
+
+            <div class="intro">
+                
+            </div>
+            <style>
+                .con {
+                    margin: 0 25% 0;
+                    padding: 3% 0 5%;
+                    border: 2px solid black;
+                    text-align: center;
+                    background-color: blanchedalmond;
+                    font-weight: 900;
+                }
+                hr {
+                    border: 3px solid black;
+                    width: 70%;
+                    margin: auto;
+                    font-weight: bold;
+                }
+                 button {
+                     width: 200px;
+                     height: 60px;
+                     font-size: 30px;
+                     margin: 0 auto 0;
+                 }
+                 input:focus {
+                    border: 2px solid aquamarine;
+                    background-color: aquamarine;
+                 }
+                 .selectA, .selectB {
+                    border: 2px solid black;
+                    width: 50px;
+                    height: 40px;
+                    text-align: center;
+                 }
+                 .con p {
+                    font-size: 20px;
+                 }
+                 
+                .row {
+                    height: 150px;
+                    width: 100vw;
+                }
+            </style>
+            <div class="con">
+                <h2>請確認您的購買資訊</h2>
+
+
+                <hr><br>
+                <h2></h2>
+                <br>
+                <p>件數：<input type="text" value=<%= number %> readonly class="selectA">&nbsp;件&nbsp;尺寸：<input type="text" value=<%= size %> readonly class="selectB">&nbsp;號<p>
+                <p></p>
+                <br>
+                姓名：<input type="text" class="name" required><br><br>
+                電話：<input type="tel" class="tel" required><br><br>
+                地址：<input type="text"class="add" required>
+                <br><br>
+                <button>確認購買</button>
+                <br><br>
+                <a href="#" onclick="javascript:history.go(-1)">返回上一頁</a>
+            </div>
+            
+    </div>
+
+    
+        
+    <%- include('../shared/footer') %>
+    <!-- <div class="row">
+      <div class="col-md-4 text-left">
+          <ul>
+            <li><h4>關於我們</h4></li>
+            <li><a href="/views/center.ejs">客服中心</a></li>
+            <li><a href="/views/question.ejs">購買須知</a></li>
+            <li><a href="/views/pps.ejs">人物介紹</a></li>
+          </ul>
+      </div>
+      
+      <div class="col-md-4 text-left">
+        <ul>
+        <li><h4>會員中心</h4></li>
+        <li>購物流程</li>
+        <li>訂單查詢</li>
+        <li>退貨及退款</li>
+      </ul>
+      </div>
+      <div class="col-md-4 text-left">
+            <address>
+              <h3>
+                服務專線：02-22222222        
+                <br>服務時間：禮拜一至五
+                <br>12:00~21:00
+              </h3>
+            </address>
+      </div>
+    </div> -->
+
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+      <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                if(!check($(".name").val())){
+                    alert("please re-input name");
+                }else {
+                    if(!check($(".tel").val())){
+                      alert("please re-input tel");
+                    }else {
+                        if(!check($(".add").val())){
+                            alert("please re-input address");
+                        }else {
+                            var str = "件數：" + $(".selectA").val() + " 件" + "\n" +
+                                      "尺寸：" + $(".selectB").val() + " 號" + "\n" +
+                                      "姓名：" + $(".name").val()    +         "\n" + 
+                                      "電話：" + $(".tel").val()     +         "\n" +  
+                                      "地址：" + $(".add").val();
+                            window.alert(str);
+                            completeBuy();
+                        }
+                    }
+                }
+            })
+        })
+        function check(value) {
+            if(value == "") {
+                return false;
+            }else{
+                return true;
+            }
+        }
+        function completeBuy(){
+            window.alert("Thank you for your purchase!");
+            window.location.href = "/purchase/complete";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <title>Document</title>
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+         body {
+            position: relative;
+            height: 100%;
+
+            /* background */
+            background-image: url('/images/back.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+         }
+         /* .Background {
+            width: 100vw;
+            height: 100vh;
+            background-repeat: repeat-y;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+         } */
+         #board, #slide,#board1, #slide1,#board2, #slide2,#board3, #slide3,#board4, #slide4,#board5, #slide5,#board6, #slide6 {
+            padding:10px;
+            text-align:center;
+            background-color:rgb(128, 162, 196);
+            border: solid 3px rgb(#327fd2);
+         }
+         #board,#board1 ,#board2 ,#board3 ,#board4 ,#board5 ,#board6  {
+            padding:10px;
+            display:none;
+         }
+       </style>
+       <script>
+          $(document).ready(function(){
+             $("#slide").click(function(){
+                $("#board").slideToggle("slow");
+             });
+             $("#slide1").click(function(){
+                $("#board1").slideToggle("slow");
+             });
+             $("#slide2").click(function(){
+                $("#board2").slideToggle("slow");
+             });
+             $("#slide3").click(function(){
+                $("#board3").slideToggle("slow");
+             });
+             $("#slide4").click(function(){
+                $("#board4").slideToggle("slow");
+             });
+             $("#slide5").click(function(){
+                $("#board5").slideToggle("slow");
+             });
+             $("#slide6").click(function(){
+                $("#board6").slideToggle("slow");
+             });
+          });
+          
+       </script>　
+</head>   
+<body>
+   <!-- <img src="/images/back.jpg" alt="WRONG" class="Background">  -->
+    <%- include('shared/header') %>
+    <!-- <header id="header">
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>
+            <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+            <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+          </ul>
+        </nav>
+      </header> -->
+      <div class="con">
+        <h1>《GOBLET客服中心》</h1>
+    <div id="slide">Q:線上諮詢服務</div>
+    <div id="board">A:可洽詢官方IG:<a href="https://www.instagram.com/goblet__official/" target="_blank">goblet__offical</a>
+    或者官方蝦皮<a href="https://shopee.tw/goblet__official" target="_blank">goblet__offical</a></div>
+    <br>
+    <div id="slide1">Q:尺寸上的問題何處有尺寸表?</div>
+    <div id="board1">A:請提供身高體重，私訊官方IG或蝦皮將有專人為您服務提供尺寸對照表</div>
+    <br>
+    <div id="slide2">Q:何時會有優惠活動</div>
+    <div id="board2">A:追蹤官方IG官網及蝦皮會不定期更新各種活動</div>
+    <br>
+    <div id="slide3">Q:有實體店面嗎?</div>
+    <div id="board3">A:目前尚未有實體店面服務，等到未來條件許可也許會創立工作室</div>
+    <br>
+    <div id="slide4">Q:客服在線聯絡時段?</div>
+    <div id="board4">A:主要時段在12點至21點，但若有空餘時間在線都會回覆</div>
+    <br>
+    <div id="slide5">Q:如何退款?</div>
+    <div id="board5">A:若經證實商品確實有瑕疵須退款可提供匯款之帳戶(銀行、郵局皆可)</div>
+    <br>
+    <div id="slide6">Q:如何退貨?</div>
+    <div id="board6">A:若消費者從網頁上或廠商客服處取得「退貨代碼」透過ibon輸入退貨服務代碼並列印出「交貨便服務單」(亦可從網頁上直接列印)，
+    消費者向門市職員索取「交貨便服務單專用袋」裝入單據上聯後，黏於退貨商品上。消費者將退貨商品交給門市櫃檯人員，
+    門市人員和大智通司機對點商品數量後，由大智通司機將商品載走即完成退貨。若在蝦皮購買以蝦皮退貨流程程序</div>
+    <br>
+</div>
+
+<%- include('shared/footer') %>
+<!-- <div class="row">
+   <div class="col-md-4 text-left">
+       <ul>
+         <li><h4>關於我們</h4></li>
+         <li><a href="/views/center.ejs">客服中心</a></li>
+         <li><a href="/views/question.ejs">購買須知</a></li>
+         <li><a href="/views/pps.ejs">人物介紹</a></li>
+       </ul>
+   </div>
+   
+   <div class="col-md-4 text-left">
+     <ul>
+     <li><h4>會員中心</h4></li>
+     <li>購物流程</li>
+     <li>訂單查詢</li>
+     <li>退貨及退款</li>
+   </ul>
+   </div>
+   <div class="col-md-4 text-left">
+         <address>
+           <h3>
+             服務專線：02-22222222        
+             <br>服務時間：禮拜一至五
+             <br>12:00~21:00
+           </h3>
+         </address>
+   </div>
+ </div> -->
+
+   <script src="/Js/Slide_animation.js"></script>
+   <script src="/Js/jquery-3.7.1.min.js"></script>
+   <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+   <script src="/Js/transition.js"></script>
+   
+</body>
+</html>

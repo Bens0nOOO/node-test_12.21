@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>ch30_30.html</title> 
+   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <style> 
+      #board, #slide {
+                        padding:30px;
+                        text-align:center;
+                        background-color:yellow;
+                        border: solid 3px blue;
+      }
+      #board {
+                padding:60px;
+                display:none
+      }
+   </style>
+   <script>
+      $(document).ready(function(){
+         $("#slide").click(function(){
+            $("#board").slideToggle("slow");
+         });
+      });
+   </script>　
+</head>
+<body>
+<div id="slide">按此可以滑出/滑入深智公司面板</div>
+<br>
+<div id="board">深智公司</div>
+</body>
+</html>

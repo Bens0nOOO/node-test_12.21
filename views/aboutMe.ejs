@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="1"> -->
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>About Me</title>
+    <style>
+        body {
+          /* background-image: url("../image/AM_background.jpg"); */
+          /* width: 100%; */
+          /* height: 100%; */
+          position: relative;
+          height: 100%;
+          /* background */
+          background-image: url('/images/back.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .Background {
+          width: 100%;
+          height: 100%;
+          background-repeat: repeat-y;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        #about p {
+          position: relative;
+          padding-left: 40%;
+        }
+    </style>
+</head>
+<body>
+  <img src="/images/back.jpg" alt="WRONG" class="Background">
+  <%- include('shared/header') %>
+  <!-- <header id="header">
+    <nav class="sticky-nav">
+      <ul>
+        <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>
+        <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+        <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+      </ul>
+    </nav>
+  </header> -->
+  <div id="about">
+      <h1 style="position: relative;padding-left:40%;padding-top: 5%;">
+        品牌起源
+      </h1>
+      <p style="position: relative;padding-left:40%;padding-top: 1%;">
+      <p>在今年暑假創立了GOBLET_OFFICAL</p>
+      <p>品牌創作為鄭媁庭及姚桓亦 </p>
+      <p>由於對於歐美服飾的喜愛 </p>
+      <p>於是隨手創立了"GOBLET" </p>
+      <p>設計理念為彼此姓氏開頭鄭和姚 </p>
+      <p>英文字母 Z 和 Y 結合誕生了此 Logo</p>
+      <p>圖示恰巧看起來像個酒杯
+      於是命名為 GOBLET</p>
+      <p>建立這個品牌後，我們在IG也建立了自己的帳號:goblet__official </p>
+      <p>同時也在自己個人IG帳號宣傳，邀請網路上稍有名氣的好友們當模特以及宣傳。 </p>
+      
+      <img src="/images/shortcut_icon.webp" alt="WRONG" style="position: relative; bottom: 380px;left: 100px;">
+      <img src="/images/back.jpg" alt="WRONG" class="Background">
+  </div>
+  
+ 
+<!--       
+      <footer style="position: relative;">
+        <ul class="footer_li">
+          <li class="footer_item"><h4>關於我們</h4></li>
+          <li class="footer_item">品牌故事</li>
+          <li class="footer_item">常見問題</li>
+          <li class="footer_item">聯繫客服</li>
+        </ul>
+        
+        <ul class="footer_list">
+          
+          <li class="footer_item"><h4>會員中心</h4></li>
+          <li class="footer_item">購物流程</li>
+          <li class="footer_item">訂單查詢</li>
+          <li class="footer_item">退貨及退款</li>
+        </ul>
+      <address><h3>服務專線：02-22222222        
+        <br>服務時間：禮拜一至五
+        <br>12:00~21:00</h3></address>
+    </footer> -->
+    <%- include('shared/footer') %>
+    <!-- <div class="row">
+      <div class="col-md-4 text-left">
+          <ul>
+            <li><h4>關於我們</h4></li>
+            <li><a href="/views/center.ejs">客服中心</a></li>
+            <li><a href="/views/question.ejs">購買須知</a></li>
+            <li><a href="/views/pps.ejs">人物介紹</a></li>
+          </ul>
+      </div>
+      
+      <div class="col-md-4 text-left">
+        <ul>
+        <li><h4>會員中心</h4></li>
+        <li>購物流程</li>
+        <li>訂單查詢</li>
+        <li>退貨及退款</li>
+      </ul>
+      </div>
+      <div class="col-md-4 text-left">
+            <address>
+              <h3>
+                服務專線：02-22222222        
+                <br>服務時間：禮拜一至五
+                <br>12:00~21:00
+              </h3>
+            </address>
+      </div>
+    </div> -->
+
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+      
+</body>
+</html>

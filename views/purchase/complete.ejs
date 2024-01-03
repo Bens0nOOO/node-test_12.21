@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        body {
+          /* background-image: url("../image/AM_background.jpg"); */
+          /* width: 100%; */
+          /* height: 100%; */
+          position: relative;
+          height: 100%;
+        }
+        .Background {
+          width: 100%;
+          height: 100%;
+          background-repeat: repeat-y;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .con {
+          text-align: start;
+        }
+        .con h1 {
+          position: relative;
+          padding-left:10%;
+          padding-top: 2%;
+        }
+        .con div {
+          /* border: 1px solid black; */
+          padding:0 10% 0;
+          margin: auto;
+          padding-left: 10%;
+        }
+        .con dt {
+          position: relative;
+          padding-left: 13%;
+        }
+        .con dd {
+          position: relative;
+          padding-left: 15%;
+        }
+        .face {
+          border-radius: 50%;
+          max-width: 150px;
+          padding-left: 0%;
+          /* height: auto; */
+        }
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        header {
+          text-align: center;
+          background-color: #f0f0f0;
+          padding: 20px;
+        }
+
+        /* img {
+          border-radius: 50%;
+          max-width: 150px;
+          height: auto;
+        } */
+
+        h1 {
+          margin: 10px 0 5px;
+        }
+
+        p {
+          color: #555;
+        }
+
+        section {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+          list-style: none;
+          /* padding: 0; */
+        }
+
+        /* li {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 5px 10px;
+          border-radius: 5px;
+        } */
+
+        h1 {
+          background-color: #754b79;
+          margin: 0px;
+          padding: 20px;
+          
+          color: white;
+          text-align: center;
+          
+          /* border-style: solid; */
+          /* border-width: 0 0 1px 0; */
+        }
+          
+        /* The page content, not including the header */
+        div.main {
+          margin: 30px 70px 0 60px;
+        }
+        
+        /* The introduction section. */
+        div.intro {
+          margin-bottom: 40px;
+          color: #010000;
+        } 
+             
+    </style>
+</head>
+<body>
+    <img src="/images/back.jpg" alt="WRONG" class="Background">
+    <%- include('../shared/header') %>
+    <div>
+        <h1>購買完成</h1>
+        <style>
+            .con {
+                    margin: 5% 25% 0;
+                    padding: 3% 0 5%;
+                    border: 2px solid black;
+                    text-align: center;
+                    background-color: blanchedalmond;
+                    font-weight: 900;
+                }
+                .con p {
+                    margin: auto;
+                    padding: auto;
+                    text-align: center;
+                }
+        </style>
+        <div class="con">
+            <div class="intro">
+                <h2>感謝您的購買</h2>
+                <!-- <h2>購買完成</h2> -->
+                <!-- <p>感謝您的購買</p> -->
+            </div>
+            <a href="/views/index.ejs">返回主頁</a>
+        </div>
+
+            
+    </div>
+
+    
+        
+    <%- include('../shared/footer') %>
+
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+      <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                if(!check($(".name").val())){
+                    alert("please re-input name");
+                }else {
+                    if(!check($(".tel").val())){
+                    alert("please re-input tel");
+                    }else {
+                        if(!check($(".add").val())){
+                            alert("please re-input address");
+                        }else {
+                            var str = "件數：" + $(".selectA").val() + " 件" + "\n" +
+                                      "尺寸：" + $(".selectB").val() + " 號" + "\n" +
+                                      "姓名：" + $(".name").val()    +         "\n" + 
+                                      "電話：" + $(".tel").val()     +         "\n" +  
+                                      "地址：" + $(".add").val();
+                            window.alert(str);
+                            $(".tel").text = "";
+                            $(".add").text = "";
+                        }
+                    }
+                }
+            })
+        })
+        function check(value) {
+            if(value == "") {
+                return false;
+            }else{
+                return true;
+            }
+            
+        }
+    </script>
+</body>
+</html>

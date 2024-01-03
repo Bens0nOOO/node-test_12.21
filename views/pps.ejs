@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+      
+        
+      .p1 { 
+	        line-height:1em;
+	        columns:3 300px;
+		      column-gap:1em;
+		      column-rule:solid rgb(91, 91, 163) 5px;
+       }
+	    h2 { background-color:rgb(145, 116, 190); color:rgb(244, 244, 247); }
+	    h2#ex { 
+        column-span:all;
+      }
+
+        body {
+          /* background-image: url("../image/AM_background.jpg"); */
+          /* width: 100%; */
+          /* height: 100%; */
+          position: relative;
+          height: 100%;
+        }
+        .Background {
+          width: 100%;
+          height: 100%;
+          background-repeat: repeat-y;
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .con {
+          text-align: start;
+        }
+        /* .con h1 {
+          position: relative;
+          padding-left:10%;
+          padding-top: 2%;
+        } */
+        .con div {
+          border: 1px solid black;
+          padding: auto;
+          margin: 20px;
+          /* padding-left: 10%; */
+        }
+        /* .con dt {
+          position: relative;
+          padding-left: 13%;
+        }
+        .con dd {
+          position: relative;
+          padding-left: 15%;
+        } */
+        .face {
+          border-radius:100%;
+          max-width: 150px;
+          transform: translate(50%, -10%);
+          
+          /* height: auto; */
+          /* max-width: 25%; */
+          /* height: auto; */
+          /* border-radius: 50%; */
+        }
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+        }
+
+        header {
+          text-align: center;
+          background-color: #f0f0f0;
+          padding: 20px;
+        }
+
+        /* img {
+          border-radius: 50%;
+          max-width: 150px;
+          height: auto;
+        } */
+        
+
+        h1 {
+          margin: 10px 0 5px;
+
+          background-color: #754b79;
+          margin: 0px;
+          padding: 20px;
+          
+          color: white;
+          text-align: center;
+          
+          border-style: solid;
+          border-width: 0 0 1px 0;
+        }
+
+        p {
+          color: #555;
+        }
+
+        section {
+          max-width: 800px;
+          margin: 20px auto;
+          padding: 20px;
+          /* background-color: #fff; */
+          border-radius: 8px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+          list-style: none;
+          /* padding: 0; */
+        }
+
+        /* li {
+          display: inline-block;
+          margin-right: 10px;
+          padding: 5px 10px;
+          border-radius: 5px;
+        } */
+
+          
+        /* The page content, not including the header */
+        div.main {
+          margin: 30px 70px 0 60px;
+        }
+        
+        /* The introduction section. */
+        div.intro {
+          margin-bottom: 40px;
+          color: #010000;
+        } 
+        dt, dd {
+          line-height: 25px;
+          font-size: 15px;
+          letter-spacing: 2px;
+        }
+        video {
+          position: relative;
+          top: 30px;
+        }
+             
+    </style>
+</head>
+<body>
+    <img src="/images/back.jpg" alt="WRONG" class="Background">
+    <%- include('shared/header') %>
+    <!-- <header id="header">
+      
+        <nav class="sticky-nav">
+          <ul>
+            <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>         
+            <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+            <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+          </ul>
+        </nav>
+    </header> -->
+    <div class="con">
+      <h1>網頁創建者</h1>
+    <span>
+      <div class="p1"><!-- <img src="/images/p_p/zhou.jpg" alt="WRONG" class="face"   >
+          <video src="/images/video/chou.mp4" width="400px" height="300px" controls></video>
+          <dl>
+            <dt>聯絡資訊:
+          資管二甲 A111221043 陳振洲
+          mail：A111221043@mail.shu.edu.tw</dt>
+          <dd>我叫陳振洲， 
+          是6/11的雙子男，來自世新大學，
+          平常沒事，我喜歡喝著咖啡，看看小說、
+          玩玩遊戲或者在學校附近晃晃，
+          平時沒事也會跑跑步，在做這些事的當下，可以讓我完全的放鬆</dd>
+          </dl> -->
+        <h2 id="ex">陳振洲</h1>
+          
+          <section>
+          <img src="/images/p_p/zhou.jpg" alt="WRONG" class="face" width="300px" height="220px"  >
+          <dl>
+          <dt>聯絡資訊:
+          資管二甲 A111221043 陳振洲
+          mail：A111221043@mail.shu.edu.tw</dt>
+          <dd>我叫陳振洲， 
+          是6/11的雙子男，來自世新大學，
+          平常沒事，我喜歡喝著咖啡，看看小說、
+          玩玩遊戲或者在學校附近晃晃，
+          平時沒事也會跑跑步，在做這些事的當下，可以讓我完全的放鬆。</dd>
+          </dl>
+          <video src="/images/video/chou.mp4" width="300px" height="200px" controls></video>
+        </section>
+  
+        </div>
+      
+    </span>
+    <span>
+      <div class="p1">
+        <h2 id="ex">郭旻憲</h1>
+          
+          <section>
+          <img src="/images/p_p/kuo.jpg" alt="WRONG" class="face" width="300px" height="220px"  >
+          <dl>
+          <dt>聯絡資訊:
+            資管二乙 A111221006 郭旻憲
+            mail：A111221006@mail.shu.edu.tw</dt>
+          <dd>
+            我叫郭旻憲。從小我就對故事充滿著無窮的好奇心，這讓我對看小說產生了深厚的興趣。
+            不論是懸疑驚悚、奇幻冒險還是浪漫愛情，每一種小說都能讓我沉浸在它們獨特的世界觀中，
+            體驗不同的人生與情感。
+            除此之外，我還熱愛玩遊戲。我認為遊戲不僅是娛樂的方式，更是一種藝術表達和創意的展現。</dd>
+          </dl>
+          <video src="/images/video/kuo.mp4" width="300px" height="200px" controls></video>
+        </section>
+
+          <!-- <img src="/images/p_p/kuo.jpg"  alt="WRONG" class="face"  width="300px" height="220px"  >
+          <video src="/images/video/kuo.mp4" width="300px" height="200px" controls></video>
+          <dl>
+            <dt>聯絡資訊:
+          資管二乙 A111221006 郭旻憲
+          mail：A111221006@mail.shu.edu.tw</dt>
+          <dd>我叫郭旻憲。從小我就對故事充滿著無窮的好奇心，這讓我對看小說產生了深厚的興趣。
+          不論是懸疑驚悚、奇幻冒險還是浪漫愛情，每一種小說都能讓我沉浸在它們獨特的世界觀中，
+          體驗不同的人生與情感。除此之外，我還熱愛玩遊戲。我認為遊戲不僅是娛樂的方式，更是一種藝術表達和創意的展現。
+          在我的空閒時間，我經常會探索新的小說或遊戲，這讓我的生活充滿了樂趣和新鮮感。</dd>
+          </dl> -->
+          
+      </div>
+    </span>
+    <span>
+      <div class="p1">
+        <h2 id="ex">鄭媁庭</h1>
+          
+          <section>
+          <img src="/images/p_p/ting.jpg" alt="WRONG" class="face" width="300px" height="200px"  >
+          <dl>
+          <dt>聯絡資訊:
+            資科二甲 A110222006 鄭媁庭
+            mail:A110222006@mail.shu.edu.tw</dt>
+          <dd>我叫鄭媁庭有個綽號叫企鵝，是1/25出生的水瓶女，平常的興趣是唱歌、聽音樂、玩遊戲、組樂團，高中跟大學都是
+            樂團主唱，從小的時候就很喜歡表演、唱歌，四五歲時參加過民視兒童歌唱比賽得過第二名，同時也是個外向喜歡交友的人，
+            最近考到了新光的保險業務員證照，有保險、投資和外幣相關諮詢也可以問我唷。</dd>
+          </dl>
+          <video src="/images/video/ting.mp4" width="300px" height="200px" controls></video>
+        </section>
+          <!-- <img src="/images/p_p/ting.jpg" alt="WRONG" class="face" width="300px" height="220px" >
+          <video src="/images/video/ting.mp4" width="300px" height="200px" controls></video>
+          <dl>
+            <dt>聯絡資訊:
+          資科二甲 A110222006 鄭媁庭
+          mail:A110222006@mail.shu.edu.tw</dt>
+          <dd>我叫鄭媁庭有個綽號叫企鵝，是1/25出生的水瓶女，平常的興趣是唱歌、聽音樂、玩遊戲、組樂團，高中跟大學都是
+          樂團主唱，從小的時候就很喜歡表演、唱歌，四五歲時參加過民視兒童歌唱比賽得過第二名，學過一點鋼琴跟吉他，
+          高中加入熱音社後接觸到了金屬搖滾，於是也有出去外面學金屬唱腔，對我來說音樂是我重要的舒壓來源也是靈感來源，
+          同時也是個外向喜歡交友的人，最近考到了新光的保險業務員證照，有保險、投資和外幣相關諮詢也可以問我唷。</dd>
+          </dl> -->
+      </div>
+    </span>
+        
+      
+  </div>
+    
+    <!-- <div class="con">
+        <h1 style="position: relative;padding-left:10%;padding-top: 2%;">
+            網頁創建者
+        </h1>
+        <p style="position: relative;padding-left: 13%;">
+            聯絡資訊:
+            陳振洲
+            A111221043
+            就讀世新資管二甲
+        <p style="position: relative;padding-left: 15%;">我叫陳振洲  
+            是6/11的雙子男，來自世新大學
+            平常沒事，我喜歡喝著咖啡，看看小說、
+            玩玩遊戲或者在學校附近晃晃，
+            不過我更喜歡與同學朋友間相處的當下</p>
+
+        <p style="position: relative;padding-left: 13%;">
+            聯絡資訊:
+            資管二乙 A111221006 郭旻憲
+            mail：A111221006@mail.shu.edu.tw</p>
+        <p style="position: relative;padding-left: 15%;">我叫郭旻憲。從小我就對故事充滿著無窮的好奇心，這讓我對看小說產生了深厚的興趣。
+            不論是懸疑驚悚、奇幻冒險還是浪漫愛情，每一種小說都能讓我沉浸在它們獨特的世界觀中，
+            體驗不同的人生與情感。除此之外，我還熱愛玩遊戲。我認為遊戲不僅是娛樂的方式，更是一種藝術表達和創意的展現。
+            在我的空閒時間，我經常會探索新的小說或遊戲，這讓我的生活充滿了樂趣和新鮮感。</p>
+
+        <p style="position: relative;padding-left: 13%;">
+           聯絡資訊:
+           資科二甲 A110222006 鄭媁庭
+           mail:A110222006@mail.shu.edu.tw</p>
+           <p style="position: relative;padding-left: 15%;">我叫鄭媁庭有個綽號叫企鵝，是1/25出生的水瓶女，平常的興趣是唱歌、聽音樂、玩遊戲、組樂團，高中跟大學都是
+           樂團主唱，從小的時候就很喜歡表演、唱歌，四五歲時參加過民視兒童歌唱比賽得過第二名，學過一點鋼琴跟吉他，
+           高中加入熱音社後接觸到了金屬搖滾，於是也有出去外面學金屬唱腔，對我來說音樂是我重要的舒壓來源也是靈感來源，
+           同時也是個外向喜歡交友的人，最近考到了新光的保險業務員證照，有保險、投資和外幣相關諮詢也可以問我唷。
+        </p>
+    </div> -->
+    
+        
+    <%- include('shared/footer') %>
+    <!-- <div class="row">
+      <div class="col-md-4 text-left">
+          <ul>
+            <li><h4>關於我們</h4></li>
+            <li><a href="/views/center.ejs">客服中心</a></li>
+            <li><a href="/views/question.ejs">購買須知</a></li>
+            <li><a href="/views/pps.ejs">人物介紹</a></li>
+          </ul>
+      </div>
+      <div class="col-md-4 text-left">
+        <ul>
+        <li><h4>會員中心</h4></li>
+        <li>購物流程</li>
+        <li>訂單查詢</li>
+        <li>退貨及退款</li>
+      </ul>
+      </div>
+      <div class="col-md-4 text-left">
+            <address>
+              <h3>
+                服務專線：02-22222222        
+                <br>服務時間：禮拜一至五
+                <br>12:00~21:00
+              </h3>
+            </address>
+      </div>
+    </div> -->
+
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+</body>
+</html>

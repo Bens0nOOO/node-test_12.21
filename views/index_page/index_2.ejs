@@ -1,0 +1,288 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <script src="/Js/jquery-3.7.1.min.js"></script>
+    <script src="/Js/jquery.flexslider.js"></script>
+    <script src="/Js/jquery.flexslider-min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/flexslider.css" />
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link rel="stylesheet" href="/Css/Home.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      $(window).load(function(){
+        $(".flexslider").flexslider({
+          animation: "slide"
+        })
+      });
+
+      $(function() {
+        $(".flexslider").flexslider({
+          slideshowSpeed: 5000, //展示時間間隔ms
+          animationSpeed: 500, //滾動時間ms
+          touch: true //是否支援觸控螢幕滑動
+        });
+      });
+    </script>
+  <style type="text/css">
+	
+    /*設置div樣式的整體佈局*/
+    .page-icon{
+      margin-top:20px; /*設置距離頂部20像素 */
+      font-size:0;/*修復行內元素之間空隙間隔*/
+      text-align:center;/*設置內容居中顯示*/
+    }
+    
+    /*設置共有的的樣式佈局，主要是進行代碼優化，提高運行效率*/
+    .page-icon a,.page-disabled,.page-next{
+      border:1px solid #9b5656;
+      border-radius:5px;
+      padding:4px 10px 5px;
+      font-size:14PX;/*修復行內元素之間空隙間隔*/
+      margin-right:10px;
+    }
+    
+    /*對 a 標籤進行樣式佈局 */
+    .page-icon a{
+      text-decoration:none;/*取消鏈接的下劃線*/
+      color:#005aa0;
+    }
+    
+    .page-current{
+      color:#ff6600;
+      padding:5px 10px 5px;
+      font-size:14PX;/*修復行內元素之間空隙間隔*/
+    }
+    
+    .page-disabled{
+      color:#ccc;
+    }
+    
+    .page-next i,.page-disabled i{
+      cursor:pointer;/*設置鼠標經過時的顯示狀態，這裏設置的是顯示狀態爲小手狀態*/
+      display:inline-block;/*設置顯示的方式爲行內塊元素*/
+      width:5px;
+      height:18px;
+      background-image:url(http://img.mukewang.com/547fdbc60001bab900880700.gif);/*獲取圖標的背景鏈接*/
+    }
+    .page-disabled i{
+      background-position:-80px -608px;
+      margin-right:3px;
+    }
+  
+    .page-next i{
+      background-position:-62px -608px;
+      margin-left:3px;
+    }
+  </style>
+  </head>
+
+  
+  <body>
+    <%- include('../shared/header') %>
+    <!-- <header id="header">
+      <nav class="sticky-nav">
+        <ul>
+          <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>         
+          <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+          <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+        </ul>
+      </nav>
+    </header> -->
+    <aside>
+      <br>
+    <%- include('../shared/slide') %>
+      <!-- <div class="slideshow-container">
+        <div class="mySlides">
+          <img src="/images/ad/image1_0.png" style="width:100%" class="img_slide">
+        </div>
+      
+        <div class="mySlides">
+          <img src="/images/ad/image2_0.jpg" style="width:100%" class="img_slide">
+        </div>
+      
+        <div class="mySlides">
+          <img src="/images/ad/image3_0.png" style="width:100%" class="img_slide">
+        </div>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>-->
+    </aside> 
+    <!-- 商品框架 -->
+    <article>
+        <div class="cont">
+            <div class="item">
+              <a href="/cloth1/10">
+                <img src="/images/cloth/cloth10-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                  <p>【 GOBLET 】❤️‍🔥歐美 設計 男女T恤 夏季 黑色短袖 白色短袖 美式 復古 嘻哈 水洗 短袖❤️‍🔥
+                  『顏色』：水洗黑/白色/杏色 <br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：M-3XL <br>
+                  『價格』：白色/杏色-＞480
+                                      水洗黑-＞580
+                 
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/11">
+              <img src="/images/cloth/cloth11-1.png" width=650 height=200 class="Product_Picture">
+              </a>              
+              <div class="Product_Description">
+                  <p >【 GOBLET 】❤️‍🔥重磅 美式 街頭 復古old school  印花 半袖  短袖 街頭 短T 歐美❤️‍🔥
+                  『顏色』：黑色/深棕色/藏青色   <br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：M-3XL <br>
+                  『價格』：580
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/12">
+              <img src="/images/cloth/cloth12-1.png" width=650 height=200 class="Product_Picture">
+              </a>              
+              <div class="Product_Description">
+                  <p >【 GOBLET 】❤️‍🔥美式 街頭 嘻哈 水洗 火焰 印花 短袖 T恤 男女 夏季 高街 潮牌 情侶做舊上衣❤️‍🔥
+                  『顏色』：水洗黑<br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：S-2XL <br>
+                  『價格』：490
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/13">
+              <img src="/images/cloth/cloth13-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                  <p>【 GOBLET 】❤️‍🔥冰裂珠拼接手鏈女ins冷淡風小眾設計感男潮情侣串珠手飾配飾街頭配件❤️‍🔥
+                  『尺寸』：17+5cm<br> <!-- <div class="color-lump"></div>              -->
+                  『價格』：350 <br>
+                  
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/14">
+              <img src="/images/cloth/cloth14-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >【 GOBLET 】❤️‍🔥小眾設計拼接珍珠鏈潮人個性百搭鎖骨鏈穿搭潮流項鍊❤️‍🔥
+                  『規格』：鋼珠+abs珠<br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：40+5cm/45+5cm/50+5cm<br>
+                  『價格』：350
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/15">
+              <img src="/images/cloth/cloth15-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >【 GOBLET 】❤️‍🔥雙層叠戴爆裂珠手鏈女生ins小眾設計情侣輕奢男潮冷淡風街頭❤️‍🔥
+                『尺寸』：16+5cm<br> <!-- <div class="color-lump"></div>              -->
+                『價格』：350<br>
+                
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/16">
+              <img src="/images/cloth/cloth16-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >【 GOBLET 】❤️‍🔥缠繞手鏈男潮輕奢小眾個性配飾冷淡風男女日韓嘻哈高級飾品街頭配件搭配❤️‍🔥
+                『顏色』：黑/白色<br> <!-- <div class="color-lump"></div>              -->
+                『尺寸』：17+5cm <br>
+                『價格』：350
+                </p>
+              </div>
+            </div>            
+            <div class="item">
+              <a href="/cloth1/17">
+              <img src="/images/cloth/cloth17-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >【 GOBLET 】❤️‍🔥平價 重磅 好物休閒 簡約風 學生 運動感 百搭長袖T恤男女❤️‍🔥
+                『顏色』：黑/白/杏<br> <!-- <div class="color-lump"></div>              -->
+                『尺寸』：M-3XL <br>
+                『價格』：580
+                </p>
+              </div>
+            </div>            
+            <div class="item">
+              <a href="/cloth1/18">
+              <img src="/images/cloth/cloth18-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >【 GOBLET 】🔥高级星芒項鍊男設計感小眾潮牌鎖骨鏈女ins嘻哈配飾男士潮流❤️‍🔥
+                『尺寸』：45+7cm<br> <!-- <div class="color-lump"></div>              -->
+                『價格』：350<br>
+                
+                </p>
+              </div>
+            </div>            <!-- Add more items as needed -->
+        </div>
+
+        <div class="page-icon">
+            <a class="page-next" href="/views/index.ejs"><i class="fa-solid fa-arrow-left"></i>上一頁</a>
+            <a href="/views/index.ejs">1</a>
+            <span class="page-current">2</span>
+            <a href="/views/index_page/index_3.ejs">3</a>
+            <a href="/views/index_page/index_4.ejs">4</a><!-- page-next -->
+            <a href="/views/index_page/index_5.ejs">5</a><!-- page-disabled -->
+            <a class="page-next" href="/views/index_page/index_3.ejs">下一頁<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+    </article>
+    <%- include('../shared/footer') %>
+    <!-- <div class="row">
+      <div class="col-md-4 text-left">
+          <ul>
+            <li><h4>關於我們</h4></li>
+            <li><a href="/views/center.ejs">客服中心</a></li>
+            <li><a href="/views/question.ejs">購買須知</a></li>
+            <li><a href="/views/pps.ejs">人物介紹</a></li>
+          </ul>
+      </div>
+      
+      <div class="col-md-4 text-left">
+        <ul>
+        <li><h4>會員中心</h4></li>
+        <li>購物流程</li>
+        <li>訂單查詢</li>
+        <li>退貨及退款</li>
+      </ul>
+      </div>
+      <div class="col-md-4 text-left">
+            <address>
+              <h3>
+                服務專線：02-22222222        
+                <br>服務時間：禮拜一至五
+                <br>12:00~21:00
+              </h3>
+            </address>
+      </div>
+    </div> -->
+   
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+      
+      
+  </body>
+</html>

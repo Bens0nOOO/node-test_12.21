@@ -1,0 +1,297 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="2"> -->
+    <script src="/Js/jquery-3.7.1.min.js"></script>
+    <script src="/Js/jquery.flexslider.js"></script>
+    <script src="/Js/jquery.flexslider-min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="/Css/flexslider.css" />
+    <link rel="shortcut icon" href="/images/shortcut_icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="/Css/Header_Footer.css" />
+    <link rel="stylesheet" href="/Css/Home.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      $(window).load(function(){
+        $(".flexslider").flexslider({
+          animation: "slide"
+        })
+      });
+
+      $(function() {
+        $(".flexslider").flexslider({
+          slideshowSpeed: 5000, //展示時間間隔ms
+          animationSpeed: 500, //滾動時間ms
+          touch: true //是否支援觸控螢幕滑動
+        });
+      });
+    </script>
+  <style type="text/css">
+	
+    /*設置div樣式的整體佈局*/
+    .page-icon{
+      margin-top:20px; /*設置距離頂部20像素 */
+      font-size:0;/*修復行內元素之間空隙間隔*/
+      text-align:center;/*設置內容居中顯示*/
+    }
+    
+    /*設置共有的的樣式佈局，主要是進行代碼優化，提高運行效率*/
+    .page-icon a,.page-disabled,.page-next{
+      border:1px solid #9b5656;
+      border-radius:5px;
+      padding:4px 10px 5px;
+      font-size:14PX;/*修復行內元素之間空隙間隔*/
+      margin-right:10px;
+    }
+    
+    /*對 a 標籤進行樣式佈局 */
+    .page-icon a{
+      text-decoration:none;/*取消鏈接的下劃線*/
+      color:#005aa0;
+    }
+    
+    .page-current{
+      color:#ff6600;
+      padding:5px 10px 5px;
+      font-size:14PX;/*修復行內元素之間空隙間隔*/
+    }
+    
+    .page-disabled{
+      color:#ccc;
+    }
+    
+    .page-next i,.page-disabled i{
+      cursor:pointer;/*設置鼠標經過時的顯示狀態，這裏設置的是顯示狀態爲小手狀態*/
+      display:inline-block;/*設置顯示的方式爲行內塊元素*/
+      width:5px;
+      height:18px;
+      background-image:url(http://img.mukewang.com/547fdbc60001bab900880700.gif);/*獲取圖標的背景鏈接*/
+    }
+    .page-disabled i{
+      background-position:-80px -608px;
+      margin-right:3px;
+    }
+  
+    .page-next i{
+      background-position:-62px -608px;
+      margin-left:3px;
+    }
+  </style>
+  </head>
+
+  
+
+  <body>
+
+
+
+
+
+    
+    <header id="header">
+      <nav class="sticky-nav">
+        <ul>
+            <% for (let i = 0; i < word.length; i++) { %>
+              <li><a href=<%= web[i] %>><%= word[i] %><i class='<%= icon[i] %>'></i></a></li>
+            <% } %>
+            <img src="/images/shortcut_icon.webp"  alt="WRONG" id="icon">
+        </ul>
+        <!-- <ul>
+          <li><a href="/views/index.ejs">主頁<i class="fa-solid fa-house"></i></a></li>
+          <li><a href="/views/cloth1.ejs">買家中心<i class="fa-brands fa-shopify"></i></a></li>          
+          <li><a href="/views/aboutMe.ejs">關於我們<i class="fa-solid fa-users"></i></i></a></li>
+          
+        </ul> -->
+      </nav>
+
+    </header>
+    <aside>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="/images/ad/image1_0.png" style="width:100%" class="img_slide">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="/images/ad/image2_0.jpg" style="width:100%" class="img_slide">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="/images/ad/image3_0.png" style="width:100%" class="img_slide">
+        </div>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+    </aside>
+    <!-- 商品框架 -->
+    <article>
+        <div class="container">
+            <div class="item">
+              <a href="/cloth1/1">
+                <img src="/images/cloth/cloth1-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                  『顏色』：白灰色/藏青色 <br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：S-2XL <br>
+                  『價格』：680
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/2">
+              <img src="/images/cloth/cloth2-1.png" width=650 height=200 class="Product_Picture">
+              </a>              
+              <div class="Product_Description">
+                <p >
+                  『顏色』：黑/杏/灰色<br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：M-2XL <br>
+                  『價格』：680
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/3">
+              <img src="/images/cloth/cloth3-1.png" width=650 height=200 class="Product_Picture">
+              </a>              
+              <div class="Product_Description">
+                <p >
+                  『顏色』：黑/白色<br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：M-XL <br>
+                  『價格』：580
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/4">
+              <img src="/images/cloth/cloth4-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                  『顏色』：黑/白色<br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：M-3XL <br>
+                  『價格』：490
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/5">
+              <img src="/images/cloth/cloth5-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                  『顏色』：黑/白/杏色<br> <!-- <div class="color-lump"></div>              -->
+                  『尺寸』：M-2XL <br>
+                  『價格』：680
+                  </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/6">
+              <img src="/images/cloth/cloth6-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                『顏色』：黑/白色<br> <!-- <div class="color-lump"></div>              -->
+                『尺寸』：M-2XL <br>
+                『價格』：680
+                </p>
+              </div>
+            </div>
+            <div class="item">
+              <a href="/cloth1/7">
+              <img src="/images/cloth/cloth7-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                『顏色』：黑/白色<br> <!-- <div class="color-lump"></div>              -->
+                『尺寸』：M-3XL <br>
+                『價格』：580
+                </p>
+              </div>
+            </div>            
+            <div class="item">
+              <a href="/cloth1/8">
+              <img src="/images/cloth/cloth8-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                『顏色』：黑/灰色<br> <!-- <div class="color-lump"></div>              -->
+                『尺寸』：M-XL <br>
+                『價格』：680
+                </p>
+              </div>
+            </div>            
+            <div class="item">
+              <a href="/cloth1/9">
+              <img src="/images/cloth/cloth9-1.png" width=650 height=200 class="Product_Picture">
+              </a>
+              <div class="Product_Description">
+                <p >
+                『顏色』：黑/杏色<br> <!-- <div class="color-lump"></div>              -->
+                『尺寸』：S-XL <br>
+                『價格』：680
+                </p>
+              </div>
+            </div>            <!-- Add more items as needed -->
+        </div>
+
+        <div class="page-icon">
+          <span class="page-disabled"><i class="fa-solid fa-arrow-left"></i>上一頁</span>
+            <span class="page-current">1</span>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a class="page-next" href="#">下一頁<i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+
+    </article>
+    <%- include('../shared/footer') %>
+    <!-- <div class="row">
+      <div class="col-md-4 text-left">
+          <ul>
+            <li><h4>關於我們</h4></li>
+            <li><a href="/views/center.ejs">客服中心</a></li>
+            <li><a href="/views/question.ejs">購買須知</a></li>
+            <li><a href="/views/pps.ejs">人物介紹</a></li>
+          </ul>
+      </div>
+      
+      <div class="col-md-4 text-left">
+        <ul>
+        <li><h4>會員中心</h4></li>
+        <li>購物流程</li>
+        <li>訂單查詢</li>
+        <li>退貨及退款</li>
+      </ul>
+      </div>
+      <div class="col-md-4 text-left">
+            <address>
+              <h3>
+                服務專線：02-22222222        
+                <br>服務時間：禮拜一至五
+                <br>12:00~21:00
+              </h3>
+            </address>
+      </div>
+    </div> -->
+
+      <script src="/Js/Slide_animation.js"></script>
+      <script src="/Js/jquery-3.7.1.min.js"></script>
+      <script src="/Css/bootstrap-5.3.2/js/bootstrap.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="/Js/transition.js"></script>
+      
+      
+  </body>
+</html>
